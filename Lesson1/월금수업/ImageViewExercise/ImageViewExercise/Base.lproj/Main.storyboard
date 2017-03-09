@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hCG-NE-cfO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--첫번째 뷰-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="7DR-kP-Zba">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7DR-kP-Zba" secondAttribute="trailing" id="AdW-2z-TRR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7DR-kP-Zba" secondAttribute="bottom" id="SJX-IP-614"/>
+                            <constraint firstItem="7DR-kP-Zba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TfR-7D-IUe"/>
+                            <constraint firstItem="7DR-kP-Zba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZTb-zC-tZ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="첫번째 뷰" id="eOE-9l-ols"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="2.2488755622188905"/>
+        </scene>
+        <!--두번째 뷰-->
+        <scene sceneID="rmM-um-hWq">
+            <objects>
+                <viewController id="i9M-ZN-CLR" customClass="SecondImageViewController" customModule="ImageViewExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zUN-cx-RfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eHK-PR-jrl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l1s-HF-LLx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tdq-hx-wdO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="두번째 뷰" id="d91-dM-Unj"/>
+                    <connections>
+                        <outlet property="secondImageView" destination="Tdq-hx-wdO" id="3cP-iX-FKs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAQ-03-1f0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="702.99850074962524"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zg1-45-3xs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MQn-Zn-cB6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="xly-Wa-zbN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wrk-K7-E6u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cew-T8-LB4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dL4-Os-4UI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="2.2488755622188905"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Tk-wb-0VJ">
+            <objects>
+                <tabBarController id="hCG-NE-cfO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Wjc-q7-X2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MQn-Zn-cB6" kind="relationship" relationship="viewControllers" id="fGc-hO-4Ri"/>
+                        <segue destination="Jak-iH-Jgr" kind="relationship" relationship="viewControllers" id="AEc-6V-4wH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKM-Gf-yYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1390" y="300"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ynZ-JL-Xuf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jak-iH-Jgr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="xqk-Su-yVy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ruz-qQ-rd1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i9M-ZN-CLR" kind="relationship" relationship="rootViewController" id="Qbx-Sq-NEc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ck1-4z-fzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="702.99850074962524"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image2" width="2656" height="1494"/>
+    </resources>
+</document>
