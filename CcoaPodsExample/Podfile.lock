@@ -1,0 +1,12 @@
+PODS:
+  - ALThreeCircleSpinner (1.0.4)
+
+DEPENDENCIES:
+  - ALThreeCircleSpinner
+
+SPEC CHECKSUMS:
+  ALThreeCircleSpinner: a87b9c3511e5fea8509923a17d6f38b11a9b1f5f
+
+PODFILE CHECKSUM: 1652fd63e44b0717a6cf86988d4a6fd920793b2c
+
+COCOAPODS: 1.2.1
